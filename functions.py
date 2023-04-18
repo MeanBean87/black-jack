@@ -63,6 +63,8 @@ def game():
     print(art.logo)
     draw_cards(variables.dealers_hand)
     draw_cards(variables.players_hand)
+    ace_check(variables.players_hand)
+    ace_check(variables.dealers_hand)
     score(False)
     bust = False
     while not bust:
